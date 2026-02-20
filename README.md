@@ -6,8 +6,8 @@ Learning JS/TS for React Native mobile development at Boost Bank.
 
 ### Week 1: JavaScript Fundamentals
 - [x] Day 1 - Variables & Data Types
-- [ ] Day 2 - Functions & Scope
-- [ ] Day 3 - Arrays & Array Methods
+- [x] Day 2 - Functions & Scope
+- [x] Day 3 - Arrays & Array Methods
 - [ ] Day 4 - Objects & Object Methods
 - [ ] Day 5 - Arrow Functions & This
 - [ ] Day 6 - Destructuring
