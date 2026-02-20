@@ -326,3 +326,7 @@ const doubleIt = numbbs.reduce((acc,num)=>{
     return acc
 },[])
 console.log(doubleIt)
+
+//===more practice for array method reactnaitve centric
+
+const practice = ['reduce','some','every','filter','find']
