@@ -330,3 +330,94 @@ console.log(doubleIt)
 //===more practice for array method reactnaitve centric
 
 const practice = ['reduce','some','every','filter','find']
+
+//=====================Mixed Array Methods Challenge (Real App Style)=========================
+
+//Scenario (Like Real React Native App)
+
+const usres = [
+  { id: 1, name: "Jigar", age: 25, active: true, salary: 30000 },
+  { id: 2, name: "Amit", age: 17, active: false, salary: 15000 },
+  { id: 3, name: "Riya", age: 22, active: true, salary: 25000 },
+  { id: 4, name: "Neha", age: 30, active: true, salary: 40000 }
+];
+
+
+//1.Get only active users
+const actives = usres.filter(user => user.active)
+console.log(actives)
+
+//2.From active users, create new array with:
+const newUsers = actives.map(({id,name}) => ({id,name}))
+console.log(newUsers)
+
+//3.Find first user whose salary is above 30000
+const firstuser = usres.find(user => user.salary > 30000)
+console.log(firstuser)
+
+//4.Calculate total salary of active users
+const totalSalary = actives.reduce((acc,user) =>{
+        return acc+user.salary
+},0)
+
+console.log(totalSalary)
+
+//5.Check if ANY user is under 18
+const undeAge = usres.some(user => user.age < 18)
+if(undeAge){
+    console.log(`Yeah there is one guy is under 18 ${undeAge}`)
+}else{
+    console.log('No all are over 18')
+}
+
+//6.Check if ALL active users are above 20
+const allAboveTwenty = usres.every(user => user.age > 20)
+allAboveTwenty ? console.log(`Yeah all above 20`) : console.log(`No all are not above 20`)
+
+
+//===========Mixed Array Practice – Level 2 ==========
+const productes = [
+  { id: 1, name: "Laptop", price: 50000, category: "Electronics", inStock: true, rating: 4.5 },
+  { id: 2, name: "Phone", price: 30000, category: "Electronics", inStock: false, rating: 4.2 },
+  { id: 3, name: "Shoes", price: 2000, category: "Fashion", inStock: true, rating: 3.8 },
+  { id: 4, name: "Watch", price: 7000, category: "Fashion", inStock: true, rating: 4.7 },
+  { id: 5, name: "Tablet", price: 25000, category: "Electronics", inStock: true, rating: 4.1 }
+];
+
+//1.Get all products that are in stock.
+const availableProds = productes.filter(prod => prod.inStock)
+console.log(availableProds)
+
+//2.From in-stock products, create a new array like:
+const prodBills = availableProds.map(({id, name, price }) => ({id, name, priceWithGST : price*1.18}))
+console.log(`=======NEW ARRAY OF IN-STOCK PRODUCTS=======`)
+console.log(prodBills)
+
+//3.Find the first product with rating greater than 4.6.
+const firstHighRated = productes.find(prod => prod.rating > 4.6)
+console.log(`======FIRST PRODUCT ABOVE 4.6 RATING==========`)
+console.log(firstHighRated)
+
+//4.Calculate total price of all Electronics category products.
+const totalPriceofProds = productes.filter(prod => prod.category === 'Electronics').reduce((acc,prod) => {
+        return acc+prod.price
+},0)
+console.log(`======TOTAL PRICE OF ALL THE PRODUCTS========`)
+console.log(`₹${totalPriceofProds}`)
+
+//5.Check if ANY product price is above 60000.
+const prodAboveSixty = productes.some(prod => prod.price>60000)
+console.log(`=======IS THERE ANY PRODUCT ABOVE THE 60K?=========`)
+console.log(prodAboveSixty)
+
+//6.Check if ALL Fashion products have rating above 3.5.
+const fashionProducts = productes.filter(prod => prod.category === 'Fashion').every(prod => prod.rating > 3.5)
+console.log(`=======ALL Fashion products have rating above 3.5?=========`)
+console.log(fashionProducts)
+
+//7.Get total price of in-stock Electronics products only.
+const totalPrices = productes.filter(prod => prod.category === 'Electronics' && prod.inStock).reduce((acc,prod) => {
+    return acc + prod.price
+},0)
+console.log(`=======Total Price of products==========`)
+console.log(totalPrices)
