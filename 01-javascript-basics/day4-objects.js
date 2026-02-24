@@ -92,7 +92,7 @@ Object.entries(employee).map(([key,val]) =>{
     console.log(key,val)
 })
 
-//Object copying (/using spread operatior)
+//Object copying (/using spread operatior) // check spread operator separate file for its methods and practice.
 const emp = {
     name : "Jigar",
     age : 34,
