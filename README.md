@@ -8,10 +8,10 @@ Learning JS/TS for React Native mobile development at Boost Bank.
 - [x] Day 1 - Variables & Data Types
 - [x] Day 2 - Functions & Scope
 - [x] Day 3 - Arrays & Array Methods
-- [ ] Day 4 - Objects & Object Methods
+- [x] Day 4 - Objects & Object Methods
 - [ ] Day 5 - Arrow Functions & This
 - [ ] Day 6 - Destructuring
-- [ ] Day 7 - Spread & Rest Operators
+- [x] Day 7 - Spread & Rest Operators
 
 ### Week 2: Advanced JS
 - [ ] Day 8 - Promises & Async/Await
