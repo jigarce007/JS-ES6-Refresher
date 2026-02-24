@@ -48,4 +48,59 @@ console.log(Object.entries(user))
 //4.hasOwnProperty() - Used for validation.
 console.log(user.hasOwnProperty("name"))
 
+//Real react-native example..
 
+Object.entries(user).map(([key,value])=>{
+    console.log(key,value)
+})
+
+
+
+//PRACTICE========================
+const employee = {
+    id : 4311,
+    name : "Jason Baron",
+    role : "SSE",
+    salary : "9000",
+    city : "NewYork",
+}
+
+//get a value
+const nam = employee.name
+console.log(nam)
+
+//get value by key
+const ky = "name"
+console.log(employee[ky])
+
+//Add/remove property
+employee.county = "USA"
+console.log(employee)
+
+//remove property
+delete employee.county
+console.log(employee)
+
+//get array of keys
+console.log(Object.keys(employee))
+
+//get array of values
+console.log(Object.values(employee))
+
+//get key,value pair from object
+Object.entries(employee).map(([key,val]) =>{
+    console.log(key,val)
+})
+
+//Object copying (/using spread operatior)
+const emp = {
+    name : "Jigar",
+    age : 34,
+    city : "KualaLumpur",
+    job : "SSE",
+}
+//here , we copy the object and then update its value.
+const copyEmp = {
+    ...emp,country :  "Malaysia"
+}
+console.log(copyEmp)
