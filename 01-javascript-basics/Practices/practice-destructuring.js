@@ -43,8 +43,8 @@ console.log(physics)
 /* Extract:
 name
 Rest of properties into variable others */
-
+/* 
 const { name,...rest} = student
 console.log(name)
-console.log(rest)
+console.log(rest) */
 
