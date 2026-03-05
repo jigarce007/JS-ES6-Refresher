@@ -14,8 +14,8 @@ Learning JS/TS for React Native mobile development at Boost Bank.
 - [x] Day 7 - Spread & Rest Operators
 
 ### Week 2: Advanced JS
-- [ ] Day 8 - Promises & Async/Await
-- [ ] Day 9 - Array Methods (map, filter, reduce)
+- [X] Day 8 - Promises & Async/Await
+- [X] Day 9 - Array Methods (map, filter, reduce)
 - [ ] Day 10 - ES6 Modules
 - [ ] Day 11 - Error Handling
 - [ ] Day 12 - Closures

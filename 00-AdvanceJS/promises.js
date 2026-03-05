@@ -100,3 +100,32 @@ async function callIsEven(params) {
 }
 
 callIsEven()
+
+//Parallel API calls(all promise)
+
+function getFollowers(){
+    return new Promise((res,rej) => {
+        setTimeout(() => {
+            res("You have 500 Followers")
+        }, 2500);
+    })
+}
+
+function getFollowings(){
+    return new Promise((res,rej) =>{
+        setTimeout(() => {
+            res("You are following 350 people")
+        }, 3500);
+    })
+}
+
+async function getCounts(){
+    const[followers,followings] = await Promise.all([
+        getFollowers(),getFollowings()
+    ])
+
+    console.log(followers);
+    console.log(followings);
+}
+
+getCounts()
