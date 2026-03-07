@@ -16,11 +16,11 @@ Learning JS/TS for React Native mobile development at Boost Bank.
 ### Week 2: Advanced JS
 - [X] Day 8 - Promises & Async/Await
 - [X] Day 9 - Array Methods (map, filter, reduce)
-- [ ] Day 10 - ES6 Modules
-- [ ] Day 11 - Error Handling
-- [ ] Day 12 - Closures
-- [ ] Day 13 - Callbacks
-- [ ] Day 14 - Event Loop
+- [X] Day 10 - ES6 Modules
+- [X] Day 11 - Error Handling
+- [X] Day 12 - Closures
+- [X] Day 13 - Callbacks
+- [X] Day 14 - Event Loop
 
 ### Week 3: TypeScript Basics
 - [ ] Day 15 - Types & Interfaces
