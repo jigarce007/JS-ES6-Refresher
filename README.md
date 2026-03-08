@@ -23,8 +23,8 @@ Learning JS/TS for React Native mobile development at Boost Bank.
 - [X] Day 14 - Event Loop
 
 ### Week 3: TypeScript Basics
-- [ ] Day 15 - Types & Interfaces
-- [ ] Day 16 - Functions in TS
+- [X] Day 15 - Types & Interfaces
+- [X] Day 16 - Functions in TS
 - [ ] Day 17 - Generics
 - [ ] Day 18 - Unions & Intersections
 - [ ] Day 19 - Type Guards
