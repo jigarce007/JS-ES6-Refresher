@@ -3,7 +3,6 @@
 //when to use interface and type
 //Why Reactnative prefers interfaces for props
 
-import { compose } from "node:stream"
 
 
 //Example,
