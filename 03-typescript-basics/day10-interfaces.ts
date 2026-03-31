@@ -3,8 +3,6 @@
 //when to use interface and type
 //Why Reactnative prefers interfaces for props
 
-
-
 //Example,
 
 interface User {
